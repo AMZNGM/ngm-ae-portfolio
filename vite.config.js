@@ -15,7 +15,8 @@ export default defineConfig(({ command }) => ({
     }),
     tailwindcss(),
   ],
-  base: command === "build" ? "/ngm-ae-portfolio/" : "/",
+  // base: command === "build" ? "/ngm-ae-portfolio/" : "/",
+  base: "/ngm-ae-portfolio/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
