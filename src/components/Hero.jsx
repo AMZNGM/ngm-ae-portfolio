@@ -19,11 +19,10 @@ const Hero = () => {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top top",
-          end: "bottom 90%",
+          end: "bottom 95%",
           pin: true,
           scrub: 1,
           anticipatePin: 1,
-          markers: true,
         },
       });
 
