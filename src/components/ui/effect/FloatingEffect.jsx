@@ -18,6 +18,7 @@ const FloatingEffect = ({
 
   useEffect(() => {
     const handleMouseMove = (e) => {
+      if (window.innerWidth > 640) return;
       if (!containerRef.current || !floatingRef.current || !innerRef.current) return;
 
       const container = containerRef.current;

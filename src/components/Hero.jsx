@@ -19,7 +19,7 @@ const Hero = () => {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top top",
-          end: "bottom 95%",
+          end: window.innerWidth > 640 ? "bottom center" : "bottom 50%",
           pin: true,
           scrub: 1,
           anticipatePin: 1,
