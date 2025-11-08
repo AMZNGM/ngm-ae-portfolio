@@ -85,7 +85,7 @@ const Navbar = () => {
   return (
     <header ref={sectionRef} className="fixed top-0 w-screen flex justify-between bg-bg p-4 z-50">
       <Link to="/">
-        <h1 className="text-text font-fake">NGM</h1>
+        <h1 className="text-text font-fake mt-1">NGM</h1>
       </Link>
 
       <div className="relative">
@@ -98,7 +98,7 @@ const Navbar = () => {
           />
         </div>
 
-        <div className="flex max-xl:flex-col justify-center items-center font-fake mr-10">
+        <div className="flex justify-center items-center font-fake mr-10 max-md:mr-8">
           {contactLinks.map((link, index) => (
             <Link
               ref={(el) => (linksRef.current[index] = el)}

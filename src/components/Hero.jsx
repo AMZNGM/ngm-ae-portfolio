@@ -51,7 +51,7 @@ const Hero = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative w-screen h-screen overflow-hidden bg-bg text-text font-fake text-[15px] py-24 max-md:pb-4 px-4">
+      className="relative w-screen h-screen overflow-hidden bg-bg text-text font-fake text-[15px] py-24 px-4">
       <div
         ref={containerRef}
         className="size-full flex flex-col justify-between items-center max-sm:items-center max-xl:items-start max-xl:overflow-hidden">

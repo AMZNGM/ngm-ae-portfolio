@@ -94,12 +94,11 @@ const Projects = () => {
 
         <div className="flex flex-col">
           {projectsData().map((project, index) => (
-            <div key={index} className={`border-b border-text ${index === 0 ? "border-t" : ""}`}>
+            <div key={index} className={`border-b border-main ${index === 0 ? "border-t" : ""}`}>
               <div
                 onClick={() => handleProjectClick(index)}
-                className={`group py-1.5 cursor-pointer hover:bg-text hover:text-bg duration-100 ${
-                  expandedIndex === index ? "bg-text text-bg" : ""
-                }`}>
+                className={`group py-1.5 cursor-pointer hover:bg-text hover:text-bg duration-100 ${expandedIndex === index ? "bg-text text-bg" : ""
+                  }`}>
                 <div className="grid grid-cols-5 justify-between items-center text-right">
                   <h3 className="truncate group-hover:translate-x-4 duration-300 max-md:col-span-4 text-left">
                     {project.title}
@@ -148,7 +147,7 @@ const Projects = () => {
                             href={project.mediaUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-block px-4 py-2 border border-b-0 border-text hover:bg-text hover:text-bg duration-200 text-sm">
+                            className="inline-block px-4 py-2 border border-b-0 border-main hover:bg-text hover:text-bg duration-200 text-sm">
                             Watch on {project.mediaType} →
                           </a>
                         </div>
@@ -161,7 +160,7 @@ const Projects = () => {
                             href={project.spotifyLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-block px-4 py-2 border border-b-0 border-text hover:bg-text hover:text-bg duration-200 text-sm">
+                            className="inline-block px-4 py-2 border border-b-0 border-main hover:bg-text hover:text-bg duration-200 text-sm">
                             Listen on Spotify →
                           </a>
                         </div>
