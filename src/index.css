@@ -1,34 +1,21 @@
-@import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap");
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300&display=swap');
 @font-face {
-  font-family: "FakeReceipt";
-  src: url("@/assets/fonts/Fake Receipt.otf") format("opentype");
+  font-family: 'FakeReceipt';
+  src: url('@/assets/fonts/Fake Receipt.otf') format('opentype');
 }
 @theme {
   --color-main: #b1b1b1;
   --color-text: #ffffff;
   --color-bg: #121212;
-  --font-fake: "FakeReceipt";
+  --font-fake: 'FakeReceipt';
 }
 * {
   box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth;
   scrollbar-width: none;
-  scrollbar-color: #b1b1b1 var(--color-bg);
-}
-body {
-  font-family: "Inter", sans-serif;
-  color: var(--color-text);
-  background-color: var(--color-bg);
-  width: 100dvw;
-  min-height: 100vh;
-  position: relative;
-  overflow-x: hidden !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-overflow-scrolling: touch;
+  font-family: 'Inter', sans-serif;
 }
 ::selection {
   background: var(--color-main);

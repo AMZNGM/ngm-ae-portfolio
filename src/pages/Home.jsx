@@ -1,13 +1,13 @@
-import Hero from "@/components/Hero.jsx";
-import Projects from "@/components/Projects.jsx";
+import Hero from '@/components/Hero.jsx'
+import Projects from '@/components/Projects.jsx'
 
 const Home = () => {
   return (
-    <main className="relative">
+    <main className='relative'>
       <Hero />
       <Projects />
     </main>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
