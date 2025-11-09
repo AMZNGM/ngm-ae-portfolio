@@ -25,7 +25,7 @@ const Navbar = () => {
           stagger: 0.08,
           ease: 'back.out',
         },
-        '+=2'
+        '+=1'
       )
     },
     { scope: sectionRef }
