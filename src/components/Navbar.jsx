@@ -22,7 +22,7 @@ const Navbar = () => {
         {
           opacity: 1,
           duration: 0.8,
-          stagger: 0.08,
+          stagger: -0.08,
           ease: 'back.out',
         },
         '+=1'
